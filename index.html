@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+		<p><h1>Calculadora</h1>
+			<input type="text" id="tela" disabled>
+			<br>
+			<button onClick="limparTela()">C</button>
+			<button class="operador" onClick="clicouDigito('/')">/</button>
+			<button class"operador" onClick="clicouDigito('*')">*</button>
+			<button class="operador" onClick="clicouDigito('-')">-</button>
+			<br>
+			<button onClick="clicouDigito('7')">7</button>
+			<button onClick="clicouDigito('8')">8</button>
+			<button onClick="clicouDigito('9')">9</button>
+			<button class="operador" onClick="clicouDigito('+')">+</button>
+			<br>
+			<button onClick="clicouDigito('4')">4</button>
+			<button onClick="clicouDigito('5')">5</button>
+			<button onClick="clicouDigito('6')">6</button>
+			<button onClick="clicouDigito('.')">.</button>
+			<br>
+			<button onClick="clicouDigito('1')">1</button>
+			<button onClick="clicouDigito('2')">2</button>
+			<button onClick="clicouDigito('3')">3</button>
+			<button class="igual" onClick="calcular()">=</button>
+			<br>
+			<button class="backspace" onClick="excluirUltimoDigito()">←</button>
+			<button class="zero" onClick="clicouDigito('0')">0</button>
+			<br>
+		</p>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
